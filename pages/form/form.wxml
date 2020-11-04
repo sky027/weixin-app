@@ -1,0 +1,82 @@
+<view class="container formPage">
+  <view class="page-body">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+
+      <view class="page-section">
+        <view class="weui-cells__title">姓名：</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <input class="weui-input" name="person" maxlength="10" placeholder="请输入姓名" />
+          </view>
+        </view>
+      </view>
+
+      <view class="page-section">
+        <view class="page-section-title">国家：</view>
+        <picker name="conurry" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker">
+            当前选择：{{array[index]}}
+          </view>
+        </picker>
+      </view>
+
+      <view class="page-section page-section-gap">
+        <view class="page-section-title">性别：</view>
+        <radio-group name="radio">
+          <label><radio value="1"  checked="true"/>男</label>
+          <label><radio value="0"/>女</label>
+        </radio-group>
+      </view>
+
+      <view class="page-section">
+        <view class="page-section-title">出生日期：</view>
+        <picker name="birthday" mode="date" value="{{date}}" start="1990-01-01" end="2020-01-01" bindchange="bindDateChange">
+          <view class="picker"> 当前选择: {{dateTime}} </view>
+        </picker>
+      </view>
+
+      <view class="page-section section_gap">
+          <view class="page-section-title">设置最小/最大值：</view>
+          <view class="body-view">
+            <slider name="sliders" bindchange="sliderChange" min="0" max="100" show-value/>
+          </view>
+      </view>
+
+      <view class="page-section page-section-gap">
+        <view class="page-section-title">爱好：</view>
+        <checkbox-group name="checkbox">
+          <label><checkbox value="checkbox1" checked="true"/>选项一</label>
+          <label><checkbox value="checkbox2"/>选项二</label>
+        </checkbox-group>
+      </view>
+
+      <view class="page-section section_gap">
+          <view class="page-section-title">是否启用</view>
+          <view class="body-view">
+            <switch name="isDisabled" checked="{{switch1Checked}}" bindchange="switchChange"/>
+          </view>
+      </view>
+
+      <view class="page-section">
+        <view class="page-section-title">居住地：</view>
+        <picker name="place" mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+          <view class="picker">
+            当前选择：{{region[0]}}，{{region[1]}}，{{region[2]}}
+          </view>
+        </picker>
+      </view>
+
+      <view class="page-section">
+        <view class="weui-cells__title">备注：</view>
+        <view class="weui-cells weui-cells_after-title">
+          <textarea name="remark" auto-height placeholder="请输入备注" />
+        </view>
+      </view>
+
+      <view class="btn-area">
+        <button style="margin: 30rpx 0" type="primary" formType="submit">提 交</button>
+        <button style="margin: 30rpx 0" formType="reset">重 置</button>
+      </view>
+    </form>
+  </view>
+</view>

@@ -1,0 +1,102 @@
+.weui-tabbar__item{position: relative;}
+.page{height: 100%;}
+.weui-tabbar{height: 60px;}
+.weui-tab__panel{height: calc(100% - 60px);}
+.weui-bar__item_on{background-color: blanchedalmond;}
+.tab-box-item{height: 100%;}
+
+
+.page-section-spacing{
+  box-sizing: border-box;
+}
+.page-section-gap .page-section-title{
+  padding-left: 0;
+  padding-right: 0;
+}
+.swipers{
+  height: 200px;
+}
+.swiper-item{
+  display: block;
+  height: 200px;
+}
+
+.demo-text-1{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #1AAD19;
+  color: #FFFFFF;
+  font-size: 36rpx;
+}
+.demo-text-1:before{
+  content: 'A';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.demo-text-2{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #2782D7;
+  color: #FFFFFF;
+  font-size: 36rpx;
+}
+.demo-text-2:before{
+  content: 'B';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.demo-text-3{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0ed30;
+  color: #353535;
+  font-size: 36rpx;
+}
+.demo-text-3:before{
+  content: 'C';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 地图部分 */
+.map-box{
+  width: 100%;
+  height: calc(100% - 40px);
+}
+.map_container {
+  height: calc(100% - 36px);
+  width: 100%;
+}
+ 
+.map {
+  height: 100%;
+  width: 100%;
+}
+ 
+.list-guide{
+  display: flex;  
+  flex-direction: row; 
+  justify-content:space-around;
+  border-top: 1px solid #ededed;
+  height: 80rpx;
+}
+.list-guide-imgae{
+  height: 70rpx;
+  width: 70rpx;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+.list-guide-text{
+  vertical-align: middle;
+  line-height: 90rpx;
+  font-size: 35rpx;
+}
