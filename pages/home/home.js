@@ -121,5 +121,8 @@ Page({
       scale: 28
     })
   },
+  onbankTap: function(){
+
+  }
 
 });

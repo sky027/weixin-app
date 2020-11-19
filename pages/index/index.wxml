@@ -10,8 +10,8 @@
   <view class="forpage">
     <button class="btns" bindtap="toPagea">AAA</button>
     <button class="btns">BBB</button>
-    <button class="btns" bindtap="toForm">form表单</button>
-    <button class="btns" bindtap="toSwiper">轮播</button>
+    <button class="btns" bindtap="toForm">form 表单</button>
+    <button class="btns" bindtap="toSwiper">轮播 </button>
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
